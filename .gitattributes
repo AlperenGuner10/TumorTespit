@@ -1,5 +1,4 @@
 # Auto detect text files and perform LF normalization
-* text=auto
 *.py linguist-language=Python
 *.html linguist-language=HTML
 *.css linguist-language=CSS
