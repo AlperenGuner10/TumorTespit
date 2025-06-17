@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Seçimi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Tümör Tahmin Uygulaması</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/breakhis">BreakHis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/brain">Brain Tumor</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main class="flex-fill">
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Hangi modeli kullanmak istersiniz?</h1>
+        <div class="d-grid gap-3 col-6 mx-auto">
+            <a href="/breakhis" class="btn btn-primary btn-lg">BreakHis - Meme Kanseri Tahmini</a>
+            <a href="/brain" class="btn btn-success btn-lg">Brain Tumor - Beyin Tümörü Tahmini</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Bitirme Projesi</p>
+</footer>
+</body>
+</html>
